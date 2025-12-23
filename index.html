@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>⏱ Time Tracker</h1>
+        <p id="status">Ready</p>
+
+        <div class="divider"></div>
+
+        <div id="display">00:00:00</div>
+
+        <div class="btn-group">
+            <button id="startBtn">Start</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="resetBtn">Reset</button>
+            <button id="lapBtn">Lap</button>
+        </div>
+
+        <button id="clearLaps">Clear Laps</button>
+
+        <ul id="laps"></ul>
+
+        <button id="themeToggle">Switch Theme</button>
+
+        <p class="footer-text">Simple Stopwatch Web App</p>
+    </div>
+
+    <audio id="clickSound">
+        <source src="https://actions.google.com/sounds/v1/cartoon/pop.ogg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

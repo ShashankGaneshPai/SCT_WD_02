@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #0f2027, #203a43);
+    transition: 0.4s;
+}
+
+/* Card */
+.container {
+    width: 370px;
+    padding: 28px;
+    border-radius: 18px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Headings */
+h1 {
+    color: #ffffff;
+}
+
+#status {
+    font-size: 14px;
+    color: #dddddd;
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    margin: 12px 0;
+}
+
+/* Display */
+#display {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00ffcc;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.btn-group button,
+#clearLaps,
+#themeToggle {
+    padding: 10px 18px;
+    margin: 6px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: rgba(255,255,255,0.2);
+    color: #111;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Lap List */
+ul {
+    list-style: none;
+    padding: 0;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+ul li {
+    background: rgba(255,255,255,0.2);
+    padding: 6px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+/* Footer */
+.footer-text {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #cccccc;
+}
+
+/* Light Theme */
+.light {
+    background: linear-gradient(120deg, #f3f7fa, #dce6f0);
+}
+
+.light .container {
+    background: rgba(255,255,255,0.85);
+}
+
+.light h1,
+.light #status,
+.light .footer-text {
+    color: #111111;
+}
+
+.light #display {
+    color: #0066ff;
+}
+
+.light ul li {
+    background: #e9eef3;
+    color: #111;
+}
+
+.light button {
+    background: #0066ff;
+    color: #ffffff;
+}
+
+.light button:hover {
+    background: #004ecc;
+}
